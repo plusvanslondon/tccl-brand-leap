@@ -42,14 +42,24 @@ All colors MUST be HSL.
     --brand-dark: 210 100% 12%;
     --brand-light: 210 100% 95%;
 
-    /* Gradients */
+    /* Enhanced Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--brand-primary)), hsl(var(--brand-accent)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--brand-dark)) 0%, hsl(var(--brand-primary)) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--brand-light)));
+    --gradient-mesh: conic-gradient(from 180deg at 50% 70%, hsl(var(--brand-primary)), hsl(var(--brand-accent)), hsl(var(--brand-dark)), hsl(var(--brand-primary)));
+    --gradient-web3: linear-gradient(45deg, hsl(var(--brand-primary)), hsl(var(--brand-accent)), hsl(200 100% 70%));
+    --gradient-glass: linear-gradient(135deg, hsl(var(--background) / 0.1), hsl(var(--brand-accent) / 0.05));
 
-    /* Shadows */
+    /* Advanced Shadows & Effects */
     --shadow-brand: 0 10px 40px -10px hsl(var(--brand-primary) / 0.3);
     --shadow-glow: 0 0 40px hsl(var(--brand-accent) / 0.2);
+    --shadow-glass: 0 8px 32px 0 hsl(var(--brand-primary) / 0.1);
+    --shadow-floating: 0 20px 60px -10px hsl(var(--brand-primary) / 0.25);
+    --blur-backdrop: blur(20px);
+
+    /* Web3 Effects */
+    --glow-primary: 0 0 20px hsl(var(--brand-primary) / 0.4);
+    --glow-accent: 0 0 20px hsl(var(--brand-accent) / 0.4);
 
     --radius: 0.5rem;
 
@@ -123,4 +133,53 @@ All colors MUST be HSL.
   .hover-scale {
     @apply transition-transform duration-200 hover:scale-105;
   }
+
+  .glass-card {
+    background: var(--gradient-glass);
+    backdrop-filter: var(--blur-backdrop);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  .web3-glow {
+    box-shadow: var(--glow-primary);
+  }
+
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, transparent, hsl(var(--brand-accent) / 0.1), transparent);
+    animation: shimmer 2s infinite;
+  }
+
+  .text-gradient {
+    background: var(--gradient-web3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient {
+    border-image: var(--gradient-primary) 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: var(--glow-primary); }
+  50% { box-shadow: var(--glow-accent); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }

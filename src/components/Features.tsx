@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Bot, Target, RefreshCw, Globe, Cog, BarChart3 } from "lucide-react";
+import { Bot, Target, RefreshCw, Globe, Cog, BarChart3, Layers, ArrowRight } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -42,14 +42,26 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-subtle">
-      <div className="container mx-auto px-6">
+    <section className="py-24 bg-background relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 opacity-30">
+        <Layers className="absolute top-10 right-20 h-40 w-40 text-brand-primary/10 floating-animation" />
+        <Layers className="absolute bottom-20 left-20 h-32 w-32 text-brand-accent/10 floating-animation" style={{animationDelay: '3s'}} />
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
-            Platform Features
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-brand-light/50 rounded-full border border-brand-primary/20">
+            <Bot className="h-5 w-5 text-brand-primary" />
+            <span className="text-sm font-semibold text-brand-primary uppercase tracking-wider">AI-Powered Platform</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6 animate-fade-in">
+            Platform{" "}
+            <span className="text-gradient">Features</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to transform customer connections into autonomous growth engines
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
+            Everything you need to transform customer connections into{" "}
+            <span className="text-brand-primary font-semibold">autonomous growth engines</span> powered by cutting-edge AI
           </p>
         </div>
         
@@ -57,21 +69,29 @@ const Features = () => {
           {features.map((feature, index) => (
             <Card 
               key={feature.title} 
-              className="group hover:shadow-brand transition-all duration-300 border-border/50 hover:border-brand-accent/50 animate-fade-in hover-scale"
+              className="group hover:shadow-floating transition-all duration-500 border-border/50 hover:border-brand-accent/50 animate-fade-in hover-scale glass-card relative overflow-hidden"
               style={{animationDelay: `${index * 0.1}s`}}
             >
-              <CardHeader>
-                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <feature.icon className="h-6 w-6 text-white" />
+              <div className="shimmer absolute inset-0 opacity-0 group-hover:opacity-100" />
+              <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-5 group-hover:opacity-10 transition-opacity duration-500`} />
+              
+              <CardHeader className="relative z-10">
+                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-lg web3-glow relative overflow-hidden`}>
+                  <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <feature.icon className="h-7 w-7 text-white relative z-10 group-hover:rotate-6 transition-transform duration-500" />
                 </div>
-                <CardTitle className="text-xl text-brand-dark group-hover:text-brand-primary transition-colors">
+                <CardTitle className="text-xl text-brand-dark group-hover:text-gradient transition-all duration-500 font-bold">
                   {feature.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base leading-relaxed">
+              <CardContent className="relative z-10">
+                <CardDescription className="text-base leading-relaxed text-muted-foreground group-hover:text-foreground transition-colors duration-500">
                   {feature.description}
                 </CardDescription>
+                <div className="flex items-center gap-2 mt-4 text-brand-primary opacity-0 group-hover:opacity-100 transition-all duration-500 text-sm font-semibold">
+                  <span>Learn more</span>
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                </div>
               </CardContent>
             </Card>
           ))}
