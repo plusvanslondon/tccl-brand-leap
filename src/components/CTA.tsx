@@ -29,17 +29,17 @@ const CTA = () => {
           <CardContent className="p-0">
             <div className="bg-gradient-primary text-white p-8 md:p-12 text-center">
               <h2 className="text-display-md md:text-display-lg font-bold mb-6">
-                Ready to Transform Your Customer Relationships?
+                Ready to Get Your AI-Enabled Growth Partner?
               </h2>
               <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-                Join hundreds of forward-thinking companies using AI to create autonomous growth engines. 
-                Start your transformation today—no commitment required.
+                Join 200+ small business owners who've stopped juggling agencies and started scaling with AI. 
+                Your fractional COO, CMO & CTO awaits—no long contracts required.
               </p>
               
               {/* Primary CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <Button size="lg" className="bg-white text-brand-primary hover:bg-white/90 shadow-lg group">
-                  Start Your Free Trial
+                  Get Your Growth Partner
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
@@ -56,7 +56,7 @@ const CTA = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckIcon />
-                  <span className="text-sm">14-day free trial</span>
+                  <span className="text-sm">30-day trial available</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckIcon />
@@ -110,7 +110,7 @@ const CTA = () => {
         {/* Bottom Notice */}
         <div className="mt-8 text-center text-sm text-text-muted animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <p>
-            Trusted by 500+ companies worldwide. SOC 2 Type II certified. GDPR compliant.
+            Trusted by 200+ small businesses. Results-focused partnerships. Transparent pricing.
           </p>
         </div>
       </div>

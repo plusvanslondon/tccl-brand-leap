@@ -6,31 +6,31 @@ const NotJustCallCenter = () => {
   const achievements = [
     {
       icon: TrendingUp,
-      metric: "340%",
-      label: "Revenue Growth",
-      description: "Average increase in first year"
+      metric: "3x",
+      label: "Average Revenue Growth",
+      description: "Within 12 months of partnership"
     },
     {
       icon: Users,
-      metric: "50K+",
-      label: "Customers Served",
-      description: "Across enterprise clients"
+      metric: "200+",
+      label: "Small Businesses Served",
+      description: "From startups to $10M companies"
     },
     {
       icon: Zap,
-      metric: "89%",
-      label: "Automation Rate",
-      description: "Of routine customer interactions"
+      metric: "90%",
+      label: "Implementation Success",
+      description: "Of growth strategies deployed"
     }
   ];
 
   const capabilities = [
-    "AI-powered customer journey mapping",
-    "Real-time sentiment analysis and response",
-    "Predictive lead scoring and qualification",
-    "Automated content generation and personalization",
-    "Cross-platform engagement orchestration",
-    "Advanced analytics and performance insights"
+    "Strategic business planning and market positioning",
+    "AI-powered website optimization and SEO",
+    "Automated content creation and social media management",
+    "Sales funnel development and lead nurturing",
+    "Customer success programs and retention strategies",
+    "Real-time performance tracking and optimization"
   ];
 
   return (
@@ -42,24 +42,24 @@ const NotJustCallCenter = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-surface border border-brand-border rounded-full">
               <CheckCircle className="h-4 w-4 text-green-500" />
-              <span className="text-sm font-medium text-text-primary">Evolution Complete</span>
+              <span className="text-sm font-medium text-text-primary">AI-Enabled Growth Partner</span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h2 className="text-display-md md:text-display-lg font-bold text-text-primary">
-                We're Not Just a 
-                <span className="text-gradient"> Call Center</span> Anymore
+                Your AI-Enabled 
+                <span className="text-gradient"> COO, CMO & CTO</span> in One Partner
               </h2>
               <p className="text-xl text-text-secondary leading-relaxed">
-                We've transformed from traditional customer service into an AI-native customer relationship powerhouse. 
-                Today, we're the strategic partner that turns every customer interaction into a growth opportunity.
+                We combine human expertise with AI automation to deliver the strategic guidance and execution you need. 
+                Think of us as your fractional C-suite—handling strategy, digital marketing, and technology so you can focus on your core business.
               </p>
             </div>
 
             {/* Capabilities List */}
             <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-text-primary mb-4">What sets us apart:</h3>
+              <h3 className="text-lg font-semibold text-text-primary mb-4">How we drive your growth:</h3>
               {capabilities.map((capability, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -71,11 +71,11 @@ const NotJustCallCenter = () => {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="btn-primary group">
-                Discover Our Evolution
+                Become Our Partner
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="btn-secondary">
-                View Case Studies
+                View Success Stories
               </Button>
             </div>
           </div>
@@ -116,13 +116,13 @@ const NotJustCallCenter = () => {
             <Card className="border-brand-border bg-gradient-subtle p-6 animate-slide-up" style={{ animationDelay: '0.6s' }}>
               <CardContent className="p-0">
                 <blockquote className="text-lg italic text-text-primary mb-4">
-                  "TCCL transformed our customer engagement completely. What used to take our team hours now happens automatically, and our conversion rates have never been higher."
+                  "TCCL became our growth partner when we couldn't afford a full marketing team. They handled strategy, content, and lead generation while we focused on delivery. Revenue tripled in 18 months."
                 </blockquote>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-gradient-primary rounded-full" />
                   <div>
-                    <div className="font-semibold text-text-primary">Sarah Chen</div>
-                    <div className="text-sm text-text-secondary">VP Growth, TechCorp</div>
+                    <div className="font-semibold text-text-primary">Marcus Rodriguez</div>
+                    <div className="text-sm text-text-secondary">Founder, Local Services Co</div>
                   </div>
                 </div>
               </CardContent>

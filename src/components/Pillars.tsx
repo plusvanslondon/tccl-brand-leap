@@ -5,28 +5,18 @@ const Pillars = () => {
   const pillars = [
     {
       icon: Layers,
-      title: "Scalable Infrastructure",
-      description: "Enterprise-grade architecture that grows with your business needs",
+      title: "Strategy Stack",
+      description: "Business strategy, market positioning, and growth planning powered by AI insights and proven frameworks",
     },
     {
       icon: Zap,
-      title: "Real-Time Processing",
-      description: "Instant insights and automated responses across all touchpoints",
+      title: "Digital Stack",
+      description: "Website optimization, SEO, content creation, and digital marketing that actually converts visitors to customers",
     },
     {
       icon: Network,
-      title: "Integrated Ecosystem",
-      description: "Seamlessly connects all your business tools and workflows",
-    },
-    {
-      icon: Shield,
-      title: "Enterprise Security",
-      description: "Bank-level security with blockchain-verified data integrity",
-    },
-    {
-      icon: Cpu,
-      title: "AI-Driven Intelligence",
-      description: "Machine learning models that continuously optimize performance",
+      title: "Growth Stack",
+      description: "Sales funnels, customer success programs, and retention strategies that compound your revenue over time",
     },
   ];
 
@@ -37,22 +27,22 @@ const Pillars = () => {
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-surface border border-brand-border rounded-full mb-6">
             <Network className="h-4 w-4 text-brand-primary" />
-            <span className="text-sm font-medium text-brand-primary">Foundation</span>
+            <span className="text-sm font-medium text-brand-primary">Service Categories</span>
           </div>
           
           <h2 className="text-display-md md:text-display-lg font-bold text-text-primary mb-6">
-            Built on Five 
-            <span className="text-gradient"> Core Pillars</span>
+            Three Productised 
+            <span className="text-gradient"> Service Stacks</span>
           </h2>
           
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Our platform is architected on proven enterprise principles, 
-            enhanced with cutting-edge AI and Web3 technologies
+            Everything you need to grow your business, delivered through AI-optimized processes 
+            and proven frameworks that scale with your success
           </p>
         </div>
 
         {/* Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
             <Card 
               key={pillar.title}
@@ -79,10 +69,10 @@ const Pillars = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <p className="text-text-secondary mb-4">
-            Ready to experience the difference?
+            Ready to scale your business with AI-powered service delivery?
           </p>
           <div className="inline-flex items-center gap-2 text-brand-primary font-medium cursor-pointer group">
-            <span>Explore our platform</span>
+            <span>See our service packages</span>
             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

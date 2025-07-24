@@ -20,8 +20,8 @@ const Hero = () => {
               TCCL
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-text-secondary hover:text-brand-primary transition-colors">
-                Platform
+              <a href="#services" className="text-text-secondary hover:text-brand-primary transition-colors">
+                Services
               </a>
               <a href="#about" className="text-text-secondary hover:text-brand-primary transition-colors">
                 About
@@ -41,31 +41,31 @@ const Hero = () => {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-surface border border-brand-border rounded-full">
                 <Star className="h-4 w-4 text-brand-accent fill-current" />
-                <span className="text-sm font-medium text-text-primary">AI-Powered Enterprise Platform</span>
+                <span className="text-sm font-medium text-text-primary">Digital-First Growth Partner</span>
               </div>
 
               {/* Headline */}
               <div className="space-y-4">
                 <h1 className="text-display-lg md:text-display-xl font-bold text-text-primary leading-tight">
-                  Transform Customer 
-                  <span className="text-gradient"> Connections</span> Into 
-                  <span className="text-gradient"> Autonomous Growth</span>
+                  Your AI-Enabled 
+                  <span className="text-gradient"> COO, CMO & CTO</span> 
+                  <span className="text-gradient"> All-in-One</span>
                 </h1>
                 <p className="text-xl text-text-secondary max-w-2xl leading-relaxed">
-                  AI-driven CRM and engagement platform that converts every interaction into intelligent, 
-                  scalable business relationships. Web3-native foundation meets enterprise reliability.
+                  Stop juggling multiple agencies and freelancers. Get strategy, digital presence, and growth acceleration 
+                  through our AI-driven service delivery platform—designed specifically for ambitious small business owners.
                 </p>
               </div>
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="btn-primary group">
-                  Start Your Transformation
+                  Get Your Growth Partner
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button variant="outline" size="lg" className="btn-secondary group">
                   <Play className="mr-2 h-5 w-5" />
-                  Watch Demo
+                  See How It Works
                 </Button>
               </div>
 
@@ -77,13 +77,13 @@ const Hero = () => {
                       <div key={i} className="w-8 h-8 rounded-full bg-gradient-primary border-2 border-background" />
                     ))}
                   </div>
-                  <span className="text-sm text-text-secondary ml-2">500+ customers</span>
+                  <span className="text-sm text-text-secondary ml-2">200+ small businesses</span>
                 </div>
                 <div className="flex items-center gap-1">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="h-4 w-4 text-brand-accent fill-current" />
                   ))}
-                  <span className="text-sm text-text-secondary ml-1">4.9/5 rating</span>
+                  <span className="text-sm text-text-secondary ml-1">Average 3x growth</span>
                 </div>
               </div>
             </div>

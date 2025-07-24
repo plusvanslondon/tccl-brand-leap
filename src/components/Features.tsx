@@ -4,40 +4,40 @@ import { Bot, Target, RefreshCw, Globe, Cog, BarChart3, ArrowRight } from "lucid
 const Features = () => {
   const features = [
     {
-      icon: Bot,
-      title: "AI Content Engine",
-      description: "Generate brand-consistent content across all channels. Blogs, social posts, email campaigns—all optimized for your audience.",
-      category: "Content"
-    },
-    {
       icon: Target,
-      title: "Intelligent Lead Scoring",
-      description: "AI predicts customer lifetime value before the first interaction. Focus your energy where it matters most.",
-      category: "Sales"
-    },
-    {
-      icon: RefreshCw,
-      title: "CRM-Driven Engagement",
-      description: "Automated nurture sequences that feel personal. Every touchpoint planned, every conversation purposeful.",
-      category: "Automation"
+      title: "Strategic Business Planning",
+      description: "Quarterly growth plans, competitive analysis, and market positioning strategies tailored to your industry and goals.",
+      category: "Strategy"
     },
     {
       icon: Globe,
-      title: "Web3 Client Onboarding",
-      description: "Decentralized identity management and seamless blockchain-native customer journeys.",
-      category: "Innovation"
+      title: "Website & SEO Optimization",
+      description: "High-converting websites that rank on Google and turn visitors into customers through proven conversion tactics.",
+      category: "Digital"
     },
     {
-      icon: Cog,
-      title: "Autonomous Operations",
-      description: "AI handles admin, support tickets, and initial sales conversations. Your team focuses on strategy, not repetition.",
-      category: "Operations"
+      icon: Bot,
+      title: "AI-Powered Content Creation",
+      description: "Consistent, brand-aligned content for blogs, social media, and email campaigns that engage your ideal customers.",
+      category: "Content"
+    },
+    {
+      icon: RefreshCw,
+      title: "Sales Funnel Development",
+      description: "Automated lead nurturing sequences and sales processes that convert prospects while you focus on delivery.",
+      category: "Growth"
     },
     {
       icon: BarChart3,
-      title: "Real-Time Intelligence",
-      description: "Dashboard that shows not just what happened, but what's about to happen. Predict trends before they emerge.",
+      title: "Performance Analytics",
+      description: "Real-time dashboards showing what's working, what's not, and exactly where to focus for maximum ROI.",
       category: "Analytics"
+    },
+    {
+      icon: Cog,
+      title: "Customer Success Programs",
+      description: "Retention strategies and upselling systems that increase customer lifetime value and reduce churn.",
+      category: "Success"
     }
   ];
 
@@ -48,16 +48,16 @@ const Features = () => {
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-surface border border-brand-border rounded-full mb-6">
             <Bot className="h-4 w-4 text-brand-primary" />
-            <span className="text-sm font-medium text-brand-primary">Platform Features</span>
+            <span className="text-sm font-medium text-brand-primary">Service Capabilities</span>
           </div>
           
           <h2 className="text-display-md md:text-display-lg font-bold text-text-primary mb-6">
-            Everything You Need to 
-            <span className="text-gradient"> Scale Intelligently</span>
+            Everything Your Business Needs to 
+            <span className="text-gradient"> Grow Profitably</span>
           </h2>
           
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Transform customer connections into autonomous growth engines powered by cutting-edge AI
+            From strategy to execution, we handle the complex growth initiatives so you can focus on what you do best
           </p>
         </div>
         
@@ -104,17 +104,17 @@ const Features = () => {
         <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '0.7s' }}>
           <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to see these features in action?
+              Ready to get your growth partner?
             </h3>
             <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-              Experience how our AI-powered platform can transform your customer relationships and drive autonomous growth.
+              Stop juggling multiple agencies. Get strategy, execution, and results through one AI-powered partner.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-brand-primary px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors">
-                Start Free Trial
+                Get Started Today
               </button>
               <button className="border border-white/30 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors">
-                Schedule Demo
+                Book Strategy Call
               </button>
             </div>
           </div>
