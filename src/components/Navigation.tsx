@@ -12,7 +12,11 @@ import {
   Menu,
   X,
   Bell,
-  LogOut
+  LogOut,
+  FolderOpen,
+  Package,
+  CreditCard,
+  UserCheck
 } from "lucide-react";
 
 const Navigation = () => {
@@ -20,9 +24,12 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "Home", icon: Home },
     { path: "/dashboard", label: "Dashboard", icon: BarChart3 },
-    { path: "/users", label: "Users", icon: Users },
+    { path: "/projects", label: "Projects", icon: FolderOpen },
+    { path: "/clients", label: "Clients", icon: Users },
+    { path: "/services", label: "Services", icon: Package },
+    { path: "/billing", label: "Billing", icon: CreditCard },
+    { path: "/team", label: "Team", icon: UserCheck },
     { path: "/reports", label: "Reports", icon: FileText },
     { path: "/settings", label: "Settings", icon: Settings },
   ];

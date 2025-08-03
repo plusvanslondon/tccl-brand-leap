@@ -8,6 +8,11 @@ import Dashboard from "./pages/Dashboard";
 import UserManagement from "./pages/UserManagement";
 import Settings from "./pages/Settings";
 import Reports from "./pages/Reports";
+import Projects from "./pages/Projects";
+import Clients from "./pages/Clients";
+import Services from "./pages/Services";
+import Billing from "./pages/Billing";
+import Team from "./pages/Team";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
 
@@ -23,6 +28,11 @@ const AppContent = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/clients" element={<Clients />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/billing" element={<Billing />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/users" element={<UserManagement />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/settings" element={<Settings />} />
