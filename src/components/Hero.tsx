@@ -59,7 +59,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="btn-primary group" asChild>
                   <a href="/dashboard">
-                    Try Demo Dashboard
+                    Book Strategy Call
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
