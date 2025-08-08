@@ -14,7 +14,7 @@ const Pillars = () => {
     title: "Growth Stack",
     description: "Sales funnels, customer success programs, and retention strategies that compound your revenue over time"
   }];
-  return <section className="section-padding bg-background">
+  return <section className="section-padding bg-background pb-8 md:pb-12">
       <div className="container mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
