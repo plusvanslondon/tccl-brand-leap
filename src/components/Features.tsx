@@ -1,48 +1,38 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Bot, Target, RefreshCw, Globe, Cog, BarChart3, ArrowRight } from "lucide-react";
-
 const Features = () => {
-  const features = [
-    {
-      icon: Target,
-      title: "Strategic Business Planning",
-      description: "Quarterly growth plans, competitive analysis, and market positioning strategies tailored to your industry and goals.",
-      category: "Strategy"
-    },
-    {
-      icon: Globe,
-      title: "Website & SEO Optimization",
-      description: "High-converting websites that rank on Google and turn visitors into customers through proven conversion tactics.",
-      category: "Digital"
-    },
-    {
-      icon: Bot,
-      title: "AI-Powered Content Creation",
-      description: "Consistent, brand-aligned content for blogs, social media, and email campaigns that engage your ideal customers.",
-      category: "Content"
-    },
-    {
-      icon: RefreshCw,
-      title: "Sales Funnel Development",
-      description: "Automated lead nurturing sequences and sales processes that convert prospects while you focus on delivery.",
-      category: "Growth"
-    },
-    {
-      icon: BarChart3,
-      title: "Performance Analytics",
-      description: "Real-time dashboards showing what's working, what's not, and exactly where to focus for maximum ROI.",
-      category: "Analytics"
-    },
-    {
-      icon: Cog,
-      title: "Customer Success Programs",
-      description: "Retention strategies and upselling systems that increase customer lifetime value and reduce churn.",
-      category: "Success"
-    }
-  ];
-
-  return (
-    <section className="section-padding bg-brand-surface/30 pt-0 md:pt-6">
+  const features = [{
+    icon: Target,
+    title: "Strategic Business Planning",
+    description: "Quarterly growth plans, competitive analysis, and market positioning strategies tailored to your industry and goals.",
+    category: "Strategy"
+  }, {
+    icon: Globe,
+    title: "Website & SEO Optimization",
+    description: "High-converting websites that rank on Google and turn visitors into customers through proven conversion tactics.",
+    category: "Digital"
+  }, {
+    icon: Bot,
+    title: "AI-Powered Content Creation",
+    description: "Consistent, brand-aligned content for blogs, social media, and email campaigns that engage your ideal customers.",
+    category: "Content"
+  }, {
+    icon: RefreshCw,
+    title: "Sales Funnel Development",
+    description: "Automated lead nurturing sequences and sales processes that convert prospects while you focus on delivery.",
+    category: "Growth"
+  }, {
+    icon: BarChart3,
+    title: "Performance Analytics",
+    description: "Real-time dashboards showing what's working, what's not, and exactly where to focus for maximum ROI.",
+    category: "Analytics"
+  }, {
+    icon: Cog,
+    title: "Customer Success Programs",
+    description: "Retention strategies and upselling systems that increase customer lifetime value and reduce churn.",
+    category: "Success"
+  }];
+  return <section className="section-padding bg-brand-surface/30 pt-0 md:pt-6">
       <div className="container mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -63,12 +53,9 @@ const Features = () => {
         
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <Card 
-              key={feature.title} 
-              className="card-hover border-brand-border bg-card group animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+          {features.map((feature, index) => <Card key={feature.title} className="card-hover border-brand-border bg-card group animate-slide-up" style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
               <CardHeader>
                 {/* Category Badge */}
                 <div className="flex items-center justify-between mb-4">
@@ -91,17 +78,15 @@ const Features = () => {
                 </CardDescription>
                 
                 {/* Learn More Link */}
-                <div className="flex items-center gap-2 text-brand-primary opacity-0 group-hover:opacity-100 transition-all duration-300 text-sm font-medium cursor-pointer">
-                  <span>Learn more</span>
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-                </div>
+                
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-16 text-center animate-fade-in" style={{ animationDelay: '0.7s' }}>
+        <div className="mt-16 text-center animate-fade-in" style={{
+        animationDelay: '0.7s'
+      }}>
           <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to get your growth partner?
@@ -120,8 +105,6 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Features;
