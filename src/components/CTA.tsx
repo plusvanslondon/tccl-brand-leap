@@ -1,28 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Phone, Calendar, MessageSquare, Shield, Zap, Users } from "lucide-react";
-
 const CTA = () => {
-  const features = [
-    {
-      icon: Shield,
-      title: "Enterprise Security",
-      description: "Bank-level security with SOC 2 compliance"
-    },
-    {
-      icon: Zap,
-      title: "Instant Setup",
-      description: "Get started in under 15 minutes"
-    },
-    {
-      icon: Users,
-      title: "24/7 Support",
-      description: "Dedicated success team included"
-    }
-  ];
-
-  return (
-    <section className="section-padding bg-gradient-subtle">
+  const features = [{
+    icon: Shield,
+    title: "Enterprise Security",
+    description: "Bank-level security with SOC 2 compliance"
+  }, {
+    icon: Zap,
+    title: "Instant Setup",
+    description: "Get started in under 15 minutes"
+  }, {
+    icon: Users,
+    title: "24/7 Support",
+    description: "Dedicated success team included"
+  }];
+  return <section className="section-padding bg-gradient-subtle">
       <div className="container mx-auto container-padding">
         {/* Main CTA Card */}
         <Card className="border-brand-border shadow-xl overflow-hidden animate-fade-in">
@@ -42,10 +35,7 @@ const CTA = () => {
                   Get Your Growth Partner
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Book Strategy Call
-                </Button>
+                
               </div>
 
               {/* Trust Indicators */}
@@ -68,12 +58,9 @@ const CTA = () => {
             {/* Feature Cards */}
             <div className="bg-card p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {features.map((feature, index) => (
-                  <div 
-                    key={feature.title}
-                    className="text-center animate-slide-up"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
+                {features.map((feature, index) => <div key={feature.title} className="text-center animate-slide-up" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
                     <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4">
                       <feature.icon className="h-6 w-6 text-white" />
                     </div>
@@ -83,15 +70,16 @@ const CTA = () => {
                     <p className="text-text-secondary">
                       {feature.description}
                     </p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </CardContent>
         </Card>
 
         {/* Contact Options */}
-        <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
+        <div className="mt-12 text-center animate-fade-in" style={{
+        animationDelay: '0.3s'
+      }}>
           <p className="text-text-secondary mb-6">
             Questions? We're here to help.
           </p>
@@ -108,21 +96,19 @@ const CTA = () => {
         </div>
 
         {/* Bottom Notice */}
-        <div className="mt-8 text-center text-sm text-text-muted animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div className="mt-8 text-center text-sm text-text-muted animate-fade-in" style={{
+        animationDelay: '0.4s'
+      }}>
           <p>
             Trusted by 200+ small businesses. Results-focused partnerships. Transparent pricing.
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 
 // Helper component for check icons
-const CheckIcon = () => (
-  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+const CheckIcon = () => <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-  </svg>
-);
-
+  </svg>;
 export default CTA;
