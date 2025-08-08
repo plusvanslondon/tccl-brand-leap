@@ -72,7 +72,7 @@ const Hero = () => {
                   <div className="flex -space-x-2">
                     {[1, 2, 3, 4].map(i => <div key={i} className="w-8 h-8 rounded-full bg-gradient-primary border-2 border-background" />)}
                   </div>
-                  <span className="text-sm text-text-secondary ml-2">200+ small businesses</span>
+                  <span className="text-sm text-text-secondary ml-2">Small Business Accelerator</span>
                 </div>
                 <div className="flex items-center gap-1">
                   {[1, 2, 3, 4, 5].map(i => <Star key={i} className="h-4 w-4 text-brand-accent fill-current" />)}
@@ -89,7 +89,7 @@ const Hero = () => {
                 {/* Dashboard Preview */}
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-text-primary">Live Dashboard</h3>
+                    <h3 className="text-lg font-semibold text-text-primary">TCCL Insights Live Dashboard</h3>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                       <span className="text-sm text-text-secondary">Live</span>
