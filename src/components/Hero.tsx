@@ -24,9 +24,7 @@ const Hero = () => {
               <a href="#about" className="text-text-secondary hover:text-brand-primary transition-colors">
                 About
               </a>
-              <a href="#contact" className="text-text-secondary hover:text-brand-primary transition-colors">
-                Contact
-              </a>
+              
               <Button variant="outline" size="sm">
                 Login
               </Button>
