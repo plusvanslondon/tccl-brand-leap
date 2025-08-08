@@ -42,7 +42,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="section-padding bg-brand-surface/30">
+    <section className="section-padding bg-brand-surface/30 pt-0 md:pt-6">
       <div className="container mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
