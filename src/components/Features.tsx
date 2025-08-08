@@ -91,16 +91,12 @@ const Features = () => {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to get your growth partner?
             </h3>
-            <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-              Stop juggling multiple agencies. Get strategy, execution, and results through one AI-powered partner.
-            </p>
+            <p className="text-white/90 mb-6 max-w-2xl mx-auto">Stop juggling multiple agencies. Get strategy, execution, and results through one partner.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-brand-primary px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors">
                 Get Started Today
               </button>
-              <button className="border border-white/30 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors">
-                Book Strategy Call
-              </button>
+              
             </div>
           </div>
         </div>
