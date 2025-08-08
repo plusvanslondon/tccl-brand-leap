@@ -1,27 +1,20 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Layers, Zap, Network, Shield, Cpu } from "lucide-react";
-
 const Pillars = () => {
-  const pillars = [
-    {
-      icon: Layers,
-      title: "Strategy Stack",
-      description: "Business strategy, market positioning, and growth planning powered by AI insights and proven frameworks",
-    },
-    {
-      icon: Zap,
-      title: "Digital Stack",
-      description: "Website optimization, SEO, content creation, and digital marketing that actually converts visitors to customers",
-    },
-    {
-      icon: Network,
-      title: "Growth Stack",
-      description: "Sales funnels, customer success programs, and retention strategies that compound your revenue over time",
-    },
-  ];
-
-  return (
-    <section className="section-padding bg-background">
+  const pillars = [{
+    icon: Layers,
+    title: "Strategy Stack",
+    description: "Business strategy, market positioning, and growth planning powered by AI insights and proven frameworks"
+  }, {
+    icon: Zap,
+    title: "Digital Stack",
+    description: "Website optimization, SEO, content creation, and digital marketing that actually converts visitors to customers"
+  }, {
+    icon: Network,
+    title: "Growth Stack",
+    description: "Sales funnels, customer success programs, and retention strategies that compound your revenue over time"
+  }];
+  return <section className="section-padding bg-background">
       <div className="container mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -35,20 +28,14 @@ const Pillars = () => {
             <span className="text-gradient"> Service Stacks</span>
           </h2>
           
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-            Everything you need to grow your business, delivered through AI-optimized processes 
-            and proven frameworks that scale with your success
-          </p>
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto">Everything you need to grow your business, delivered through AI-optimised processes and proven frameworks that scale with your success</p>
         </div>
 
         {/* Pillars Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {pillars.map((pillar, index) => (
-            <Card 
-              key={pillar.title}
-              className="card-hover border-brand-border bg-card/50 backdrop-blur-sm animate-slide-up group"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+          {pillars.map((pillar, index) => <Card key={pillar.title} className="card-hover border-brand-border bg-card/50 backdrop-blur-sm animate-slide-up group" style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <pillar.icon className="h-6 w-6 text-white" />
@@ -62,12 +49,13 @@ const Pillars = () => {
                   {pillar.description}
                 </p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <div className="text-center mt-16 animate-fade-in" style={{
+        animationDelay: '0.6s'
+      }}>
           <p className="text-text-secondary mb-4">
             Ready to scale your business with AI-powered service delivery?
           </p>
@@ -79,8 +67,6 @@ const Pillars = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Pillars;

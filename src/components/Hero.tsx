@@ -1,15 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Star, Users, Shield, Zap } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen bg-gradient-subtle overflow-hidden">
+  return <section className="relative min-h-screen bg-gradient-subtle overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--brand-primary)) 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }} />
+        backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--brand-primary)) 1px, transparent 0)`,
+        backgroundSize: '40px 40px'
+      }} />
       </div>
 
       <div className="relative z-10">
@@ -65,33 +63,28 @@ const Hero = () => {
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" className="btn-secondary group">
-                  <Play className="mr-2 h-5 w-5" />
-                  See How It Works
-                </Button>
+                
               </div>
 
               {/* Social Proof */}
               <div className="flex items-center gap-8 pt-8">
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="w-8 h-8 rounded-full bg-gradient-primary border-2 border-background" />
-                    ))}
+                    {[1, 2, 3, 4].map(i => <div key={i} className="w-8 h-8 rounded-full bg-gradient-primary border-2 border-background" />)}
                   </div>
                   <span className="text-sm text-text-secondary ml-2">200+ small businesses</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="h-4 w-4 text-brand-accent fill-current" />
-                  ))}
+                  {[1, 2, 3, 4, 5].map(i => <Star key={i} className="h-4 w-4 text-brand-accent fill-current" />)}
                   <span className="text-sm text-text-secondary ml-1">Average 3x growth</span>
                 </div>
               </div>
             </div>
 
             {/* Hero Visual */}
-            <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="relative animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
               <div className="relative bg-card border border-brand-border rounded-2xl p-8 shadow-xl">
                 {/* Dashboard Preview */}
                 <div className="space-y-6">
@@ -127,21 +120,25 @@ const Hero = () => {
                   {/* Activity Feed */}
                   <div className="space-y-3">
                     <h4 className="text-sm font-medium text-text-secondary">Recent Activity</h4>
-                    {[
-                      { action: "AI generated personalized email sequence", time: "2 min ago", status: "success" },
-                      { action: "Lead scoring updated for 47 prospects", time: "5 min ago", status: "info" },
-                      { action: "Automated follow-up sent to warm leads", time: "12 min ago", status: "success" }
-                    ].map((activity, i) => (
-                      <div key={i} className="flex items-center gap-3 p-3 bg-background rounded-lg border border-brand-border">
-                        <div className={`w-2 h-2 rounded-full ${
-                          activity.status === 'success' ? 'bg-green-500' : 'bg-blue-500'
-                        }`} />
+                    {[{
+                    action: "AI generated personalized email sequence",
+                    time: "2 min ago",
+                    status: "success"
+                  }, {
+                    action: "Lead scoring updated for 47 prospects",
+                    time: "5 min ago",
+                    status: "info"
+                  }, {
+                    action: "Automated follow-up sent to warm leads",
+                    time: "12 min ago",
+                    status: "success"
+                  }].map((activity, i) => <div key={i} className="flex items-center gap-3 p-3 bg-background rounded-lg border border-brand-border">
+                        <div className={`w-2 h-2 rounded-full ${activity.status === 'success' ? 'bg-green-500' : 'bg-blue-500'}`} />
                         <div className="flex-1">
                           <div className="text-sm text-text-primary">{activity.action}</div>
                           <div className="text-xs text-text-muted">{activity.time}</div>
                         </div>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </div>
 
@@ -158,8 +155,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
