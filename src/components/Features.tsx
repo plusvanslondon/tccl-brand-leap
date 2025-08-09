@@ -32,7 +32,7 @@ const Features = () => {
     description: "Retention strategies and upselling systems that increase customer lifetime value and reduce churn.",
     category: "Success"
   }];
-  return <section className="section-padding bg-brand-surface/30 pt-0 md:pt-6 pb-6 md:pb-8">
+  return <section id="services" className="section-padding bg-brand-surface/30 pt-0 md:pt-6 pb-6 md:pb-8">
       <div className="container mx-auto container-padding">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">

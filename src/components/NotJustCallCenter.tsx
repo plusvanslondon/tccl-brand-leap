@@ -34,7 +34,7 @@ const NotJustCallCenter = () => {
   ];
 
   return (
-    <section className="section-padding bg-background pt-6 md:pt-8">
+    <section id="about" className="section-padding bg-background pt-6 md:pt-8">
       <div className="container mx-auto container-padding">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content Side */}
