@@ -68,7 +68,7 @@ const Hero = () => {
                   <div className="flex -space-x-2">
                     {[1, 2, 3, 4].map(i => <div key={i} className="w-10 h-10 rounded-full bg-gradient-primary border-2 border-background shadow-sm" />)}
                   </div>
-                  <span className="text-sm font-medium text-text-secondary">200+ Partners</span>
+                  <span className="text-sm font-medium text-text-secondary">SME Accelerator</span>
                 </div>
                 <div className="flex items-center gap-2">
                   {[1, 2, 3, 4, 5].map(i => <Star key={i} className="h-4 w-4 text-brand-accent fill-current" />)}
