@@ -99,9 +99,7 @@ const CTA = () => {
         <div className="mt-8 text-center text-sm text-text-muted animate-fade-in" style={{
         animationDelay: '0.4s'
       }}>
-          <p>
-            Trusted by 200+ small businesses. Results-focused partnerships. Transparent pricing.
-          </p>
+          <p>Trusted by small businesses. Results-focused partnerships. Transparent pricing.</p>
         </div>
       </div>
     </section>;
