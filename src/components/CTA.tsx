@@ -86,7 +86,7 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="outline" className="btn-secondary group">
               <Phone className="mr-2 h-4 w-4" />
-              Call Sales: (555) 123-4567
+              Call Sales: +447537 141 707
             </Button>
             <Button variant="outline" className="btn-secondary group">
               <MessageSquare className="mr-2 h-4 w-4" />
