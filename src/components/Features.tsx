@@ -97,9 +97,7 @@ const Features = () => {
               <Button size="lg" className="bg-white text-brand-primary hover:bg-white/90 shadow-lg font-semibold">
                 Get Your Growth Partner
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-                See Success Stories
-              </Button>
+              
             </div>
           </div>
         </div>

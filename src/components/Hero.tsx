@@ -59,9 +59,7 @@ const Hero = () => {
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" className="btn-secondary">
-                  See Success Stories
-                </Button>
+                
               </div>
 
               {/* Social Proof */}
