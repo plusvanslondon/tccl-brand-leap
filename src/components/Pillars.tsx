@@ -4,15 +4,15 @@ const Pillars = () => {
   const pillars = [{
     icon: Layers,
     title: "Strategy Stack",
-    description: "Business strategy, market positioning, and growth planning powered by AI insights and proven frameworks"
+    description: "Market positioning, competitive analysis, and growth planning powered by AI insights and proven business frameworks"
   }, {
     icon: Zap,
     title: "Digital Stack",
-    description: "Website optimization, SEO, content creation, and digital marketing that actually converts visitors to customers"
+    description: "High-converting websites, SEO optimization, and content marketing that turns visitors into customers"
   }, {
     icon: Network,
     title: "Growth Stack",
-    description: "Sales funnels, customer success programs, and retention strategies that compound your revenue over time"
+    description: "Automated sales funnels, customer success programs, and retention strategies that compound revenue"
   }];
   return <section className="section-padding bg-background pb-8 md:pb-12">
       <div className="container mx-auto container-padding">
@@ -23,12 +23,12 @@ const Pillars = () => {
             <span className="text-sm font-medium text-brand-primary">Service Categories</span>
           </div>
           
-          <h2 className="text-display-md md:text-display-lg font-bold text-text-primary mb-6">
-            Three Productised 
+          <h2 className="text-display-md md:text-display-lg font-bold text-text-primary mb-6 tracking-tight">
+            Three Complete 
             <span className="text-gradient"> Service Stacks</span>
           </h2>
           
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">Everything you need to grow your business, delivered through AI-optimised processes and proven frameworks that scale with your success</p>
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">Everything you need to grow your business, delivered through AI-optimized processes and proven frameworks that scale with your success</p>
         </div>
 
         {/* Pillars Grid */}

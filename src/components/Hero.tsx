@@ -41,40 +41,40 @@ const Hero = () => {
               </div>
 
               {/* Headline */}
-              <div className="space-y-4">
-                <h1 className="text-display-lg md:text-display-xl font-bold text-text-primary leading-tight">
+              <div className="space-y-6">
+                <h1 className="text-display-lg md:text-display-xl font-bold text-text-primary leading-tight tracking-tight">
                   Your AI-Enabled 
-                  <span className="text-gradient"> COO, CMO & CTO</span> 
-                  <span className="text-gradient"> All-in-One</span>
+                  <span className="text-gradient block md:inline"> Growth Partner</span>
                 </h1>
                 <p className="text-xl text-text-secondary max-w-2xl leading-relaxed">
-                  Stop juggling multiple agencies and freelancers. Get strategy, digital presence, and growth acceleration 
-                  through our AI-driven service delivery platform—designed specifically for ambitious small business owners.
+                  Stop juggling agencies. Get strategy, execution, and growth acceleration through our AI-driven platform—your fractional COO, CMO & CTO in one partnership.
                 </p>
               </div>
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="btn-primary group" asChild>
+                <Button size="lg" className="btn-primary group shadow-lg" asChild>
                   <a href="/dashboard">
-                    Book Strategy Call
+                    Get Your Growth Partner
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
-                
+                <Button variant="outline" size="lg" className="btn-secondary">
+                  See Success Stories
+                </Button>
               </div>
 
               {/* Social Proof */}
-              <div className="flex items-center gap-8 pt-8">
-                <div className="flex items-center gap-2">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-8">
+                <div className="flex items-center gap-3">
                   <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map(i => <div key={i} className="w-8 h-8 rounded-full bg-gradient-primary border-2 border-background" />)}
+                    {[1, 2, 3, 4].map(i => <div key={i} className="w-10 h-10 rounded-full bg-gradient-primary border-2 border-background shadow-sm" />)}
                   </div>
-                  <span className="text-sm text-text-secondary ml-2">Small Business Accelerator</span>
+                  <span className="text-sm font-medium text-text-secondary">200+ Partners</span>
                 </div>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-2">
                   {[1, 2, 3, 4, 5].map(i => <Star key={i} className="h-4 w-4 text-brand-accent fill-current" />)}
-                  <span className="text-sm text-text-secondary ml-1">Average 3x growth</span>
+                  <span className="text-sm font-medium text-text-secondary">3x Average Growth</span>
                 </div>
               </div>
             </div>

@@ -46,14 +46,14 @@ const NotJustCallCenter = () => {
             </div>
 
             {/* Headline */}
-            <div className="space-y-4">
-              <h2 className="text-display-md md:text-display-lg font-bold text-text-primary">
-                Your AI-Enabled 
-                <span className="text-gradient"> COO, CMO & CTO</span> in One Partner
+            <div className="space-y-6">
+              <h2 className="text-display-md md:text-display-lg font-bold text-text-primary tracking-tight">
+                Beyond a Service Provider—
+                <span className="text-gradient block"> We're Your Growth Partner</span>
               </h2>
               <p className="text-xl text-text-secondary leading-relaxed">
-                We combine human expertise with AI automation to deliver the strategic guidance and execution you need. 
-                Think of us as your fractional C-suite—handling strategy, digital marketing, and technology so you can focus on your core business.
+                We combine human expertise with AI automation to deliver strategic guidance and execution. 
+                Think of us as your fractional C-suite—handling strategy, marketing, and technology so you can focus on what you do best.
               </p>
             </div>
 
@@ -69,9 +69,9 @@ const NotJustCallCenter = () => {
             </div>
 
             {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="btn-primary group">
-                Become Our Partner
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              <Button size="lg" className="btn-primary group shadow-lg">
+                Start Your Partnership
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="btn-secondary">

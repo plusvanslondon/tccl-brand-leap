@@ -21,21 +21,23 @@ const CTA = () => {
         <Card className="border-brand-border shadow-xl overflow-hidden animate-fade-in">
           <CardContent className="p-0">
             <div className="bg-gradient-primary text-white p-8 md:p-12 text-center">
-              <h2 className="text-display-md md:text-display-lg font-bold mb-6">
-                Ready to Get Your AI-Enabled Growth Partner?
+              <h2 className="text-display-md md:text-display-lg font-bold mb-6 tracking-tight">
+                Ready to Scale Your Business?
               </h2>
-              <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-                Join 200+ small business owners who've stopped juggling agencies and started scaling with AI. 
-                Your fractional COO, CMO & CTO awaits—no long contracts required.
+              <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Join 200+ business owners who've stopped juggling agencies and started scaling with AI. 
+                Your growth partner awaits—no long contracts, just results.
               </p>
               
               {/* Primary CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" className="bg-white text-brand-primary hover:bg-white/90 shadow-lg group">
+                <Button size="lg" className="bg-white text-brand-primary hover:bg-white/90 shadow-lg group font-semibold">
                   Get Your Growth Partner
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+                  Book Strategy Call
+                </Button>
               </div>
 
               {/* Trust Indicators */}

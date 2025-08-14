@@ -1,30 +1,31 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Bot, Target, RefreshCw, Globe, Cog, BarChart3, ArrowRight } from "lucide-react";
 const Features = () => {
   const features = [{
     icon: Target,
     title: "Strategic Business Planning",
-    description: "Quarterly growth plans, competitive analysis, and market positioning strategies tailored to your industry and goals.",
+    description: "Quarterly growth plans, competitive analysis, and market positioning strategies tailored to your industry.",
     category: "Strategy"
   }, {
     icon: Globe,
     title: "Website & SEO Optimization",
-    description: "High-converting websites that rank on Google and turn visitors into customers through proven conversion tactics.",
+    description: "High-converting websites that rank on Google and turn visitors into customers through proven tactics.",
     category: "Digital"
   }, {
     icon: Bot,
     title: "AI-Powered Content Creation",
-    description: "Consistent, brand-aligned content for blogs, social media, and email campaigns that engage your ideal customers.",
+    description: "Consistent, brand-aligned content for blogs, social media, and email campaigns that engage prospects.",
     category: "Content"
   }, {
     icon: RefreshCw,
     title: "Sales Funnel Development",
-    description: "Automated lead nurturing sequences and sales processes that convert prospects while you focus on delivery.",
+    description: "Automated lead nurturing sequences and sales processes that convert while you focus on delivery.",
     category: "Growth"
   }, {
     icon: BarChart3,
     title: "Performance Analytics",
-    description: "Real-time dashboards showing what's working, what's not, and exactly where to focus for maximum ROI.",
+    description: "Real-time dashboards showing what's working and exactly where to focus for maximum ROI.",
     category: "Analytics"
   }, {
     icon: Cog,
@@ -41,12 +42,12 @@ const Features = () => {
             <span className="text-sm font-medium text-brand-primary">Service Capabilities</span>
           </div>
           
-          <h2 className="text-display-md md:text-display-lg font-bold text-text-primary mb-6">
-            Everything Your Business Needs to 
-            <span className="text-gradient"> Grow Profitably</span>
+          <h2 className="text-display-md md:text-display-lg font-bold text-text-primary mb-6 tracking-tight">
+            Complete Growth 
+            <span className="text-gradient"> Service Platform</span>
           </h2>
           
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
             From strategy to execution, we handle the complex growth initiatives so you can focus on what you do best
           </p>
         </div>
@@ -87,16 +88,18 @@ const Features = () => {
         <div className="mt-16 text-center animate-fade-in" style={{
         animationDelay: '0.7s'
       }}>
-          <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to get your growth partner?
+          <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white shadow-xl">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-tight">
+              Ready to Scale Your Business?
             </h3>
-            <p className="text-white/90 mb-6 max-w-2xl mx-auto">Stop juggling multiple agencies. Get strategy, execution, and results through one partner.</p>
+            <p className="text-white/90 mb-8 max-w-2xl mx-auto text-lg">Stop juggling multiple agencies. Get strategy, execution, and results through one AI-enabled partner.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-brand-primary px-6 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors">
-                Get Started Today
-              </button>
-              
+              <Button size="lg" className="bg-white text-brand-primary hover:bg-white/90 shadow-lg font-semibold">
+                Get Your Growth Partner
+              </Button>
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+                See Success Stories
+              </Button>
             </div>
           </div>
         </div>
