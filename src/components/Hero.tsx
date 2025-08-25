@@ -25,8 +25,12 @@ const Hero = () => {
                 About
               </a>
               
-              <Button variant="outline" size="sm">
-                Login
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => window.location.href = '/growth-hub'}
+              >
+                Client Login
               </Button>
             </nav>
           </header>

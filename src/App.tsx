@@ -14,6 +14,7 @@ import Services from "./pages/Services";
 import Billing from "./pages/Billing";
 import Team from "./pages/Team";
 import NotFound from "./pages/NotFound";
+import GrowthHub from "./pages/GrowthHub";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
@@ -21,12 +22,14 @@ const queryClient = new QueryClient();
 const AppContent = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const isGrowthHub = location.pathname === "/growth-hub";
 
   return (
     <div className="min-h-screen bg-background">
-      {!isHomePage && <Navigation />}
+      {!isHomePage && !isGrowthHub && <Navigation />}
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/growth-hub" element={<GrowthHub />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/clients" element={<Clients />} />
